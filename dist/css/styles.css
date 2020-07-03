@@ -1,0 +1,79 @@
+/* Loading Spiiner */
+.lds-container{
+  z-index: 999999999999999999;
+  margin:0px;
+  background-color: #000000c4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.lds-dual-ring {
+  display: block;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.form-horizontal .control-label.text-left{
+    text-align: left;
+}
+
+
+.text-help{
+  color: rgb(119, 119, 119);
+  font-style: italic;
+  font-size: 12px;
+}
+
+
+.table td{
+  padding: 3px;
+}
+
+.table td{
+  font-size: 12px;
+}
+
+.table .row-title{
+  font-weight: bold;
+}
+
+.table tr .row-action{
+  display: none;
+}
+
+.table tr:hover .row-action{
+  display: block;
+}
+.table tr .row-action a{
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.ck .ck-content{
+  min-height: 400px;
+}
